@@ -215,6 +215,7 @@ class QuizManager {
             game.level = 2;
             this.showExplanation(true, question.explanation, true);
         } else {
+            game.score = 0;
             this.showExplanation(isCorrect, question.explanation, false);
         }
     }
@@ -329,6 +330,7 @@ class Game {
 
     showTutorial(callback) {
         const modal = document.createElement('div');
+        this.zeroScore()
         modal.className = 'modal';
         modal.innerHTML = `
             <div class="modal-content">
@@ -355,6 +357,7 @@ class Game {
 
         document.getElementById('start-game').addEventListener('click', () => {
             modal.remove();
+            this.timeLeft = 30;
             if (callback) callback();
         });
     }
@@ -384,8 +387,12 @@ class Game {
         });
     }
 
-    startGame() {
+    zeroScore(){
         this.score = 0;
+        this.updateScore();
+    }
+
+    startGame() {
         this.timeLeft = 30;
         this.mosquitos = [];
         this.particles = [];
