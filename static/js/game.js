@@ -248,6 +248,9 @@ const quizManager = new QuizManager();
 
 class Game {
     constructor() {
+        const telegram = window.Telegram.WebApp;
+        telegram.isVerticalSwipesEnabled = false;
+
         this.canvas = document.getElementById('gameCanvas');
         this.ctx = this.canvas.getContext('2d');
         this.score = 0;
