@@ -275,15 +275,15 @@ class Game {
                 <p>В игре есть несколько типов комаров и вспомогательные элементы:</p>
                 <ul style="text-align: left; margin: 20px 0; list-style: none;">
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/regular_mosquito.svg" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/aedes.svg" style="width: 40px; height: 40px; margin-right: 10px;">
                         Немалярийный комар (1 очко)
                     </li>
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/fast_mosquito.svg" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/anopheles.svg" style="width: 40px; height: 40px; margin-right: 10px;">
                         Малярийный комар (3 очка)
                     </li>
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/time_mosquito.svg" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/capsule.svg" style="width: 40px; height: 40px; margin-right: 10px;">
                         Таблетка (замедляет время)
                     </li>
                 </ul>
@@ -308,7 +308,7 @@ class Game {
                 <p>Внимание! Появился новый тип комара:</p>
                 <ul style="text-align: left; margin: 20px 0; list-style: none;">
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/evil_mosquito.png" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/longleg.png" style="width: 40px; height: 40px; margin-right: 10px;">
                         Комар-долгоножка (отнимает 5 очков, потому что он безвредный!)
                     </li>
                 </ul>
