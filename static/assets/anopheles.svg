@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Body -->
+    <path fill="#8B4513" d="M45 35 Q50 45 55 35 L55 25 Q50 20 45 25 Z"/>
+    <!-- Head -->
+    <circle fill="#654321" cx="50" cy="25" r="5"/>
+    <!-- Proboscis -->
+    <path stroke="#654321" stroke-width="1" d="M50 22 L50 15"/>
+    <!-- Wings -->
+    <path fill="#D3D3D3" opacity="0.6" d="M45 30 Q35 25 30 35 Q35 40 45 35"/>
+    <path fill="#D3D3D3" opacity="0.6" d="M55 30 Q65 25 70 35 Q65 40 55 35"/>
+    <!-- Legs -->
+    <path stroke="#8B4513" stroke-width="1" d="M47 35 Q40 45 35 50"/>
+    <path stroke="#8B4513" stroke-width="1" d="M50 35 Q50 45 50 55"/>
+    <path stroke="#8B4513" stroke-width="1" d="M53 35 Q60 45 65 50"/>
+</svg>

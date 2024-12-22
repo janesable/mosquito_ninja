@@ -113,7 +113,6 @@ input[type="text"] {
     border: none;
     width: 200px;
 }
-
 .leaderboard-container {
     max-width: 800px;
     margin: 50px auto;
@@ -135,3 +134,4 @@ th, td {
 th {
     background-color: var(--secondary-color);
 }
+

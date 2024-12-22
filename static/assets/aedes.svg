@@ -1,0 +1,15 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    
+    <ns0:path fill="#918140" d="M45 35 Q50 45 55 35 L55 25 Q50 20 45 25 Z" />
+    
+    <ns0:circle fill="#918140" cx="50" cy="25" r="5" />
+    
+    <ns0:path stroke="#918140" stroke-width="1" d="M50 22 L50 15" />
+    
+    <ns0:path fill="#918140" opacity="0.6" d="M45 30 Q35 25 30 35 Q35 40 45 35" />
+    <ns0:path fill="#918140" opacity="0.6" d="M55 30 Q65 25 70 35 Q65 40 55 35" />
+    
+    <ns0:path stroke="#918140" stroke-width="1" d="M47 35 Q40 45 35 50" />
+    <ns0:path stroke="#918140" stroke-width="1" d="M50 35 Q50 45 50 55" />
+    <ns0:path stroke="#918140" stroke-width="1" d="M53 35 Q60 45 65 50" />
+</ns0:svg>
