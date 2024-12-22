@@ -170,7 +170,8 @@ class QuizManager {
             modal.remove();
             document.getElementById('quiz-container').classList.add('hidden');
             if (startLevel2) {
-                game.startGame();
+                game.level = 2; // Убедись, что уровень обновлён
+                game.startGame(); // Корректно запускай игру
             } else {
                 document.getElementById('game-over').classList.remove('hidden');
             }
