@@ -240,7 +240,7 @@ class Game {
                 image: new Image(),
                 points: -5,
                 speed: 300
-            }
+            }  
         };
 
         this.mosquitoTypes.regular.image.src = 'static/assets/aedes.svg';
@@ -337,6 +337,7 @@ class Game {
         this.timeModifier = this.level === 2 ? 2 : 1;
         this.updateScore();
         this.updateTimer();
+        console.log('Game loop running');
         
         // Start background music when game starts
         audioManager.startBackgroundMusic();
@@ -368,8 +369,10 @@ class Game {
             y: this.canvas.height + 50,
             type: type,
             angle: Math.random() * Math.PI * 2,
-            speed: this.mosquitoTypes[type].speed
+            speed: this.mosquitoTypes[type].speed || 200
         };
+
+        console.log(`Spawned mosquito: ${mosquito.type}, speed: ${mosquito.speed}`);
         this.mosquitos.push(mosquito);
     }
 
@@ -381,6 +384,10 @@ class Game {
         
         // Update mosquitos
         this.mosquitos.forEach((mosquito, index) => {
+            if (!mosquito.speed) {
+                mosquito.speed = 200; // Установи скорость по умолчанию
+                console.log(`Missing speed for ${mosquito.type}, setting default`);
+            }
             mosquito.y -= mosquito.speed * deltaTime * this.timeModifier;
             if (mosquito.y < -50) this.mosquitos.splice(index, 1);
         });
@@ -407,7 +414,9 @@ class Game {
             this.ctx.rotate(mosquito.angle);
             this.ctx.drawImage(
                 this.mosquitoTypes[mosquito.type].image,
-                -45, -45, 90, 90
+                -45, -45,
+                mosquito.type === 'time' ? 60 : 90, // Ширина
+                mosquito.type === 'time' ? 60 : 90  // Высота
             );
             this.ctx.restore();
         });
