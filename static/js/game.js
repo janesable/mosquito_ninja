@@ -284,7 +284,7 @@ class Game {
                         Малярийный комар (3 очка)
                     </li>
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/capsule.svg" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/capsule.svg" style="width: 20px; height: 20px; margin-right: 10px;">
                         Таблетка (замедляет время)
                     </li>
                 </ul>
@@ -309,7 +309,7 @@ class Game {
                 <p>Внимание! Появился новый тип комара:</p>
                 <ul style="text-align: left; margin: 20px 0; list-style: none;">
                     <li style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="static/assets/longleg.png" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <img src="static/assets/longleg.svg" style="width: 20px; height: 20px; margin-right: 10px;">
                         Комар-долгоножка (отнимает 5 очков, потому что он безвредный!)
                     </li>
                 </ul>
