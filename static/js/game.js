@@ -246,7 +246,7 @@ class Game {
         this.mosquitoTypes.regular.image.src = 'static/assets/aedes.svg';
         this.mosquitoTypes.fast.image.src = 'static/assets/anopheles.svg';
         this.mosquitoTypes.time.image.src = 'static/assets/capsule.svg';
-        this.mosquitoTypes.green.image.src = 'static/assets/longleg.png';
+        this.mosquitoTypes.green.image.src = 'static/assets/longleg.svg';
         
         // Add error handling for image loading
         Object.values(this.mosquitoTypes).forEach(type => {
@@ -384,10 +384,7 @@ class Game {
         
         // Update mosquitos
         this.mosquitos.forEach((mosquito, index) => {
-            if (!mosquito.speed) {
-                mosquito.speed = 200; // Установи скорость по умолчанию
-                console.log(`Missing speed for ${mosquito.type}, setting default`);
-            }
+            console.log(`Mosquito ${index}: y=${mosquito.y}, speed=${mosquito.speed}`);
             mosquito.y -= mosquito.speed * deltaTime * this.timeModifier;
             if (mosquito.y < -50) this.mosquitos.splice(index, 1);
         });
@@ -491,6 +488,7 @@ class Game {
     }
 
     endGame() {
+        console.log('Game ended');
         cancelAnimationFrame(this.gameLoop);
         clearInterval(this.spawnTimer);
         clearInterval(this.countdownTimer);
